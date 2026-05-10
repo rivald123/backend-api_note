@@ -1,0 +1,26 @@
+# POST http://localhost:3002/api/notes
+# Content-Type: application/json
+
+# {
+#   "content": "This is a new note created by the REST client.",
+#   "important": false
+# }
+
+# GET all notes to verify the new note has been added
+# GET http://localhost:3002/api/notes 
+
+# GET the new note by id to verify it has been added
+# GET http://localhost:3002/api/notes/69cf5553d0993221bbb3a014
+
+# DELETE the new note by id to clean up
+# DELETE http://localhost:3002/api/notes/69cf4ae2354a31e04e9a6800
+
+# UPDATE the new note by id to change its content
+PUT http://localhost:3002/api/notes/69cf5553d0993221bbb3a014
+Content-Type: application/json
+
+{
+  "content": "This is an updated note created by the REST client", 
+  "important": true
+}
+
